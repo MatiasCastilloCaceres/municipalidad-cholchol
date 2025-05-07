@@ -1,0 +1,45 @@
+/* Botones */
+.btn {
+  display: inline-block;
+  padding: 0.5rem 1.5rem;
+  border-radius: var(--border-radius);
+  font-weight: 500;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: none;
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: var(--secondary-color);
+  transform: translateY(-2px);
+  box-shadow: var(--box-shadow);
+}
+
+.btn-secondary {
+  background-color: var(--secondary-color);
+  color: white;
+}
+
+.btn-accent {
+  background-color: var(--accent-color);
+  color: white;
+}
+
+/* Enlaces */
+a {
+  color: var(--secondary-color);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: var(--primary-color);
+  text-decoration: underline;
+}

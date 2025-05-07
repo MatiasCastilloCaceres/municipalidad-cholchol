@@ -1,0 +1,76 @@
+/* Secciones */
+.section {
+  padding: var(--spacing-xl) 0;
+}
+
+.section-title {
+  font-family: var(--font-headings);
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--primary-color);
+  margin-bottom: var(--spacing-lg);
+  position: relative;
+}
+
+.section-title::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 60px;
+  height: 4px;
+  background-color: var(--accent-color);
+}
+
+/* Tarjetas */
+.card {
+  background-color: white;
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.card-body {
+  padding: var(--spacing-md);
+}
+
+.card-title {
+  font-family: var(--font-headings);
+  font-size: 1.25rem;
+  margin-top: 0;
+  margin-bottom: var(--spacing-sm);
+  color: var(--primary-color);
+}
+
+.card-text {
+  margin-bottom: var(--spacing-md);
+}
+
+/* Grid system */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -15px;
+}
+
+.col {
+  flex: 1;
+  padding: 0 15px;
+}
+
+/* Responsive columns */
+@media (max-width: 768px) {
+  .row {
+    flex-direction: column;
+  }
+  
+  .col {
+    margin-bottom: var(--spacing-md);
+  }
+}
